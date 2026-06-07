@@ -10,11 +10,9 @@
 ## Domain
 
 <!-- What topic or category of knowledge does your system cover?
-     The system covers community-driven, unofficial student reviews, grading trends, exam structures, and teaching styles for faculty within the Computer Science Department at Missouri State University (MSU).
-
-
-     This knowledge is very important especially for CS students trying to balance heavy programming workloads with other coursework, because it is very critical to feel the gaps with the proper channels. The catalog from the official department does not relect what actuallt happens in class.
-     " -->
+     Why is this knowledge valuable, and why is it hard to find through official channels?
+     Example: "Student reviews of CS professors at [university] — useful because official
+     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
 
 ---
 
@@ -23,19 +21,19 @@
 <!-- List every source you collected documents from.
      Be specific: include URLs, subreddit names, forum thread titles, or file names.
      Aim for variety — sources that together cover different subtopics or perspectives. -->
+     | # | Source | Description | URL or location |
+|---|--------|-------------|-----------------|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+| 6 | | | |
+| 7 | | | |
+| 8 | | | |
+| 9 | | | |
+| 10 | | | |
 
-| # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | r/missouristate - "Computer Science Students?"| Subreddit Thread| [https://www.reddit.com/r/missouristate/comments/i0qp21/computer_science_students/](https://www.reddit.com/r/missouristate/comments/i0qp21/computer_science_students/)|
-| 2 | r/missouristate - "Computer Science at MSU"| Subreddit Thread| [https://www.reddit.com/r/missouristate/comments/jmzz5g/computer_science_at_msu/](https://www.reddit.com/r/missouristate/comments/jmzz5g/computer_science_at_msu/)|
-| 3 | r/missouristate - "Will MSU be worth it for me?" (CS review)| Subreddit Thread| |[https://www.reddit.com/r/missouristate/comments/sin703/will_missouri_state_university_be_worth_it_for_me/](https://www.reddit.com/r/missouristate/comments/sin703/will_missouri_state_university_be_worth_it_for_me/)
-| 4 | RateMyProfessors - MSU Computer Science Faculty Index| Public Review Site| https://www.ratemyprofessors.com/search/professors/936?q=*&did=11|
-| 5 | r/missouristate-Will Missouri State University be worth it for me?|Subreddit Thread | https://www.reddit.com/r/missouristate/comments/sin703/will_missouri_state_university_be_worth_it_for_me/|
-| 6 | RateMyProfessors-Jamil saquel |Public Review Site |https://www.ratemyprofessors.com/professor/109481 |
-| 7 | RateMyProfessors-Rahul dubey |Public Review Site |https://www.ratemyprofessors.com/professor/3092556 |
-| 8 | RateMyProfessors-siming Liu |Public Review Site  |https://www.ratemyprofessors.com/professor/2593599 |
-| 9 | RateMyProfessors-Hui Liu |Public Review Site | https://www.ratemyprofessors.com/professor/1071783|
-| 10 | RateMyProfessors-Mukulika Ghosh| Public Review Site|https://www.ratemyprofessors.com/professor/2879300 |
 
 ---
 
