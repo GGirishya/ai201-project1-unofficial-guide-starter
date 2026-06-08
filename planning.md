@@ -109,6 +109,48 @@
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
+     ```
+┌─────────────────────────────────────────────────────────────────────┐
+│  1. DOCUMENT INGESTION                                              │
+│     Tool: Python (requests + praw for Reddit, manual HTML save      │
+│           for RateMyProfessors)                                     │
+│     Output: raw .txt files per source, saved to documents/          │
+└────────────────────────┬────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  2. CHUNKING                                                        │
+│     Tool: Python (custom chunk_text() function)                     │
+│     Chunk size: 200 chars | Overlap: 20 chars                       │
+│     Output: list of (chunk_text, metadata) tuples                   │
+└────────────────────────┬────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  3. EMBEDDING + VECTOR STORE                                        │
+│     Embedding model: all-MiniLM-L6-v2 (sentence-transformers)       │
+│     Vector store: ChromaDB (local, persistent)                      │
+│     Output: embedded chunks stored in chroma collection             │
+└────────────────────────┬────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  4. RETRIEVAL                                                       │
+│     Tool: ChromaDB .query()                                         │
+│     Top-k: 3 most similar chunks per user query                     │
+│     Output: top-3 chunk texts + source metadata                     │
+└────────────────────────┬────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  5. GENERATION                                                      │
+│     Model: llama-3.3-70b-versatile via Groq API                     │
+│     Input: system prompt + retrieved chunks + user query            │
+│     Interface: Gradio                                               │
+│     Output: grounded natural language answer with source citations  │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ## AI Tool Plan
