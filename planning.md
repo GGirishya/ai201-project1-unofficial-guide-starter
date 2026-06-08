@@ -42,11 +42,14 @@
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:200 characters**
 
-**Overlap:**
+**Overlap:20 characters**
 
-**Reasoning:**
+**Reasoning: 
+
+     Both RateMyProfessors and Reddit comments and reviews are naturally short, most are sentences or two expressing a single opinion maybe teaching style. 200 characters as chunks preserve one coherent thought per chunk. Big chunk would merge unrelated opinions from different reviewers into one chunk, which would merge unrelated opinions, not that it will not happen. I made the overlap to be 20 characters becayse then if by mistake the chunk is cut off then we have a chance to amend the prcess
+**
 
 ---
 
@@ -58,11 +61,14 @@
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model: all-MiniLM-L6-v2 **
 
-**Top-k:**
+**Top-k: 3 **
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection: 
+     all-MiniLM-L6-v2 is fast and runs locally with no API cost, making it ideal for a student project. In a real deployment, I would weigh several tradeoffs. A larger model like text-embedding-3-large (OpenAI) or instructor-xl would likely score higher on domain-specific text because it has more capacity to distinguish nuanced sentiment (e.g., "fair grader" vs. "easy grader"). However, those models introduce API latency and per-token cost. Context length is also a factor: all-MiniLM-L6-v2 has a 256-token limit, which is fine for short reviews but would truncate longer forum posts. A model with a 512- or 1024-token context window would be safer for mixed-length corpora. Multilingual support is not a concern here since all sources are in English.
+
+**
 
 ---
 
