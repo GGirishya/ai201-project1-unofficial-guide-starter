@@ -81,11 +81,11 @@
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | What do students say about Rahul Dubey's exam difficulty?| The response should reflect a very good rating overall and good teaching style overall|
+| 2 | How do students describe Mukulika Ghosh's grading style?| The response should reflect how Mukulika ghosh is not a good teacher in terms of how she teaches anfd reflect a low rating|
+| 3 | What do MSU CS students say about the overall difficulty of the CS program?| The response should be moderate because most of the things in the document would reflect the good and the bad but the program being affordable should be very and the very first thing to point out|
+| 4 | Is Hui Liu recommended by students, and what reasons do they give?| With more than 28 rating the response should reflect that there's a high difficulty in the classes especially since they are high level classes to begiin with|
+| 5 | What do students say about the teaching style of Siming Liu?| The response should be more about |
 
 ---
 
@@ -95,9 +95,9 @@
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. There is not enough data to use, one because i could not find it also because there is not enough reviews online about our school's program.
 
-2.
+2.There might be a lot of halucinations since the chunks are 200 char with the overlap of 20, we can always anticipate halucinations.
 
 ---
 
